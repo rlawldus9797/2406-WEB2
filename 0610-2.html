@@ -33,6 +33,7 @@
             height: 70px;
             background-color: yellow;
             text-align: center;
+            line-height: 63px;
         }
 
         main {
@@ -42,7 +43,7 @@
         }
 
         article {
-            width: 730px;
+            width: 700px;
             border: 2px solid #222;
             margin-bottom: 8px;
             box-sizing: border-box;
@@ -58,11 +59,13 @@
 
         
         aside {
-            width: 200px;
+            width: 250px;
             height: 300px;
             border: 2px solid #222;
             text-align: left;
             padding: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
             
         }
 
@@ -71,14 +74,23 @@
             border: 1px solid #222;
             background-color: antiquewhite;
             text-align: center;
+            line-height: 50px;
         }
 
         nav>ul {
-            float:right;
+           overflow: hidden;
+           background-color: antiquewhite;
+        }
+
+        nav {
+            float: right;
+            overflow: hidden;
+            position: relative;
         }
 
         .bannerbox {
             background-color: gray;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -105,20 +117,20 @@
         <main>
             <section>
                 <article>
-                    <h2>main-article</h2>
+                    <h2>Main-Article</h2>
                     <p>Colorzilla for Google is an extentsion that assists web developers and graphic
                         designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
                         , Eye Dropper, Gradient Generator and many additional advanced color tools.
                     </p>
                 </article>
                 <article>
-                    <h2>main-article</h2>
+                    <h2>Main-Article</h2>
                     <p>Colorzilla for Google is an extentsion that assists web developers and graphic
                         designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
                         , Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
                 </article>
                 <article>
-                    <h2>main-article</h2>
+                    <h2>Main-Article</h2>
                     <p>Colorzilla for Google is an extentsion that assists web developers and graphic
                         designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
                         , Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
@@ -128,6 +140,9 @@
                 <h2>Right aside</h2>
                 <p>Colorzilla for Google is an extentsion that assists web developers and graphic
                     designer with color related tasks - both basic and advanced.</p>
+                <label for="email"></label>
+                <input type="email" />
+                <button>mailto</button>
                 <div class="bannerbox">
                     <h2>TEXT</h2>
                     <p>banner</p>
