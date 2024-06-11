@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../2406-WEB2/reset.css">
+    <link rel="stylesheet" href="reset.css">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
+       
  
-        .container {
+        /* .container { 
             width: 1000px;
 
-        }
+        } */
 
         header {
+            width: 1000px;
             height: 70px;
             border: 2px solid #222;
             display: flex;
@@ -32,16 +30,18 @@
             width: 180px;
             height: 70px;
             background-color: yellow;
-            text-align: center;
-            line-height: 63px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        main {
+        .wrap {
+            width: 1000px;
             display: flex;
             justify-content: space-between;
-
         }
 
+       
         article {
             width: 700px;
             border: 2px solid #222;
@@ -77,15 +77,25 @@
             line-height: 50px;
         }
 
-        nav>ul {
-           overflow: hidden;
-           background-color: antiquewhite;
-        }
+        
 
         nav {
-            float: right;
-            overflow: hidden;
-            position: relative;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+
+        }
+
+        .menu-container {
+            display: flex;
+            background-color: yellow;
+        }
+
+        .menu-content > a {
+            display: flex;
+            padding: 8px 24px;
+            text-decoration: none;
+            
         }
 
         .bannerbox {
@@ -99,23 +109,23 @@
         <header>
             <h1>WEB-logo</h1>
             <nav>
-                <ul>
-                    <li>menu-1</li>
-                    <li>menu-1</li>
-                    <li>menu-1</li>
-                    <li>menu-1</li>
+                <ul class="menu-container">
+                    <li class="menu-content">
+                        <a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
                 </ul>
-
-                <ul>
-                    <li>menu-2</li>
-                    <li>menu-2</li>
-                    <li>menu-2</li>
-                    <li>menu-2</li>
+                <ul class="menu-container">
+                    <li class="menu-content"><a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
+                    <li class="menu-content"><a href="">menu</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
+        <div class="wrap">
+            <main>
                 <article>
                     <h2>Main-Article</h2>
                     <p>Colorzilla for Google is an extentsion that assists web developers and graphic
@@ -135,21 +145,20 @@
                         designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
                         , Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
                 </article>
-            </section>
+            </main>
             <aside>
                 <h2>Right aside</h2>
                 <p>Colorzilla for Google is an extentsion that assists web developers and graphic
                     designer with color related tasks - both basic and advanced.</p>
-                <label for="email"></label>
-                <input type="email" />
+                <input type="text" name="" id="">
                 <button>mailto</button>
                 <div class="bannerbox">
                     <h2>TEXT</h2>
                     <p>banner</p>
                 </div>
             </aside>
-        </main>
-        <footer>HTML5 COPYRIGHT</footer>
+        </div>
+        <footer>&copy;HTML5 COPYRIGHT</footer>
     </div>
 </body>
 </html>
