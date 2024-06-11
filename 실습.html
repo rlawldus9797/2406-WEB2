@@ -8,22 +8,123 @@
     <style>
         header {
             width: 1000px;
-            height: 100px;
+            height: 90px;
             border: 2px solid #222;
             display: flex;
             justify-content: space-between;
+            
+            box-sizing: border-box;
+
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            background-color: yellow;
+            width: 200px;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: pink;
+        }
+
+        .menu-container {
+            display: flex;
+            background-color: yellow;
+        }
+
+        .menu-container:last-child {
+            background-color: orange;
+        }
+
+        .menu-content > a {
+            display: block;
+            padding: 7px 21px;
+            text-decoration: none;
+            color: #222;
         }
 
         .wrap {
+            width: 1000px;
             display: flex;
+            justify-content: space-between;
+           
+            gap: 8px;
+            
+            margin: 0 auto;
+            margin-bottom: 8px;
+            align-items: flex-start;
         }
 
         article {
             border: 2px solid #222;
+            /* width: 680px;
+            height: 160px; */
+            padding: 16px;
+            box-sizing: border-box;
+             
+        }
+
+        article>h2 {
+            background-color: pink;
+            /* padding: 4px; */
         }
 
         aside {
             border: 2px solid #222;
+            width: 300px;
+            padding: 16px;
+            flex-shrink: 0;
+            
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .wrap h2 {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 6px;
+            
+            
+        }
+
+        .wrap p {
+            line-height: 30px;
+        }
+
+        .aside-inner-box {
+            background-color: gray;
+            margin-top: 8px;
+        }
+
+        .aside-inner-box > h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 1000px;
+            border: 2px solid #222;
+            background-color: pink;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+
+            margin: 0 auto;
+            
         }
 
 
