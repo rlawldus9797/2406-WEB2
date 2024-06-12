@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        header {
+            width: 1000px;
+            height: 90px;
+            border: 2px solid #222;
+            display: flex;
+            justify-content: space-between;
+            
+            box-sizing: border-box;
+
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            background-color: yellow;
+            width: 200px;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: pink;
+        }
+
+        .menu-container {
+            display: flex;
+            background-color: yellow;
+        }
+
+
+
+        .menu-container:last-child {
+            background-color: orange;
+        }
+
+        .menu-content > a {
+            display: block;
+            padding: 7px 21px;
+            text-decoration: none;
+            color: #222;
+        }
+
+        .wrap {
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+           
+            gap: 8px;
+            
+            margin: 0 auto;
+            margin-bottom: 8px;
+            align-items: flex-start;
+        }
+
+        article {
+            border: 2px solid #222;
+            /* width: 680px;
+            height: 160px; */
+            padding: 16px;
+            box-sizing: border-box;
+             
+        }
+
+        article>h2 {
+            background-color: pink;
+            /* padding: 4px; */
+        }
+
+        aside {
+            border: 2px solid #222;
+            width: 300px;
+            padding: 16px;
+            flex-shrink: 0;
+            
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .wrap h2 {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 6px;
+            
+            
+        }
+
+        .wrap p {
+            line-height: 30px;
+        }
+
+        .aside-inner-box {
+            background-color: gray;
+            margin-top: 8px;
+        }
+
+        .aside-inner-box > h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 1000px;
+            border: 2px solid #222;
+            background-color: pink;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+
+            margin: 0 auto;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEB-logo</h1>
+        <nav>
+            <ul class="menu-container">
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+            </ul>
+            <ul class="menu-container">
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+                <li class="menu-content"><a href="">menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrap">
+        <main>
+            <article>
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum unde quis, neque error dolorem laborum saepe distinctio. Est nobis ut dignissimos harum excepturi corrupti. Doloribus eveniet ad iure minus?</p>
+            </article>
+            <article>
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui cupiditate quia, consequuntur necessitatibus fugit aliquid suscipit! Iste accusamus eius voluptas sequi molestias provident libero ipsam eos, ab laborum quia?</p>
+            </article>
+            <article>
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui cupiditate quia, consequuntur necessitatibus fugit aliquid suscipit! Iste accusamus eius voluptas sequi molestias provident libero ipsam eos, ab laborum quia?</p>
+            </article>
+        </main>
+        <aside>
+            <h2>Right aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, placeat. Nesciunt autem maiores a quibusdam debitis, ad assumenda fugit laborum veniam doloribus natus fuga iure saepe, ipsa voluptatum repellendus incidunt.</p>
+            <input type="text" name="" id="">
+            <button>mailto</button>
+            <div class="aside-inner-box">
+                <h3>TEXT</h3>
+                <p>banner</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        &copy;HTML5 COPYRIGHT
+    </footer>
+</body>
+</html>
