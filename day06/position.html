@@ -39,9 +39,16 @@
 </head>
 <body>
     <div class="box static-box">static</div>
+
+    <!-- 흐름에는 순응하지만 position에는 영향을 받는 박스 -->
     <div class="box real-box">relative</div>
+
     <div class="box static-box">static</div>
+
+    <!-- 흐름에서 벗어나 position 속성을 가진 조상에 정렬되는 박스-->
+    <!-- 가장 먼저 만나는 position 조상이 body이므로 body를 기준으로 정렬됨-->
     <div class="box absolute-box">absolute</div>
+    
     <div class="box static-box">static</div>
     
 </body>
