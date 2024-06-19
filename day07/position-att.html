@@ -20,14 +20,28 @@
             background-color: antiquewhite;
 
             position: absolute;
-            left: 100%
-            
+            /* left: 100% */
+            /* margin-left: 16px; */
+            left: calc(100% + 16px);
+            /* 서로 다른 단위의 값을 계산할 수 있게 해주는 함수 */
+
+        }
+
+        .for-center {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box"></div>
+        <div class="for-center"></div>
     </div>
 </body>
 </html>
