@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../2406-WEB2/reset.css">
+    <style>
+        *{margin: 0;
+          padding: 0;}
+
+        .container {
+            width: 1000px;
+        }
+
+        header {
+            height: 90px;
+            border: 2px solid #222;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        nav {
+            float: right;
+            overflow: hidden;
+            position: relative;
+        }
+
+        nav ul {
+            overflow: hidden;
+            background-color: antiquewhite;
+            list-style: none;
+        }
+
+        nav ul:nth-of-type(1) li {
+            float: left;
+            padding-left: 20px;
+            background-color: yellow;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        nav ul:nth-of-type(2) li {
+            float: left;
+            padding-left: 20px;
+            background-color: orange;
+            line-height: 30px;
+        }
+
+        header h1 {
+            width: 200px;
+            background-color: yellow;
+            text-align: center;
+            line-height: 90px;
+        }
+        section {
+            width: 700px;
+            box-sizing: border-box;
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article {
+            height: 130px;
+            border: 2px solid #222;
+            margin-bottom: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            
+            text-align: left;
+        }
+
+        article>h2 {
+            background-color: antiquewhite;
+        }
+
+        aside {
+            width: 250px;
+            height: 300px;
+            border: 2px solid #222;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .bannerbox {
+            background-color: gray;
+            margin-top: 8px;
+        }
+
+        footer {
+            height: 50px;
+            border: 2px solid #222;
+            background-color: antiquewhite;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WEB-logo</h1>
+            <nav>
+                <ul>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                    <li>menu-1</li>
+                </ul>
+
+                <ul>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                    <li>menu-2</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main">
+            <section>
+                <article>
+                    <h2>main-article</h2>
+                    <p>Colorzilla for Google is an extentsion that assists web developers and graphic
+                        designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
+                        , Eye Dropper, Gradient Generator and many additional advanced color tools.
+                    </p>
+                </article>
+                <article>
+                    <h2>main-article</h2>
+                    <p>Colorzilla for Google is an extentsion that assists web developers and graphic
+                        designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
+                        , Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
+                </article>
+                <article>
+                    <h2>main-article</h2>
+                    <p>Colorzilla for Google is an extentsion that assists web developers and graphic
+                        designer with color related tasks - both basic and advanced. ColorZilla includes a Color Picker
+                        , Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
+                </article>
+            </section>
+            <aside>
+                <h2>Right aside</h2>
+                <p>Colorzilla for Google is an extentsion that assists web developers and graphic
+                    designer with color related tasks - both basic and advanced.</p>
+                <div class="bannerbox">
+                    <h2>TEXT</h2>
+                    <p>banner</p>
+                </div>
+            </aside>
+        </div>
+        <footer>HTML5 COPYRIGHT</footer>
+    </div>
+</body>
+</html>
