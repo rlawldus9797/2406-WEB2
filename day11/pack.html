@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .m {
+            display: block;
+            width: 80px;
+            height: 40px;
+            background-color: cadetblue;
+        }
+
+        .top-m {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            animation: bite-up alternate infinite linear 0.2s;
+            transform-origin: bottom;
+
+        }
+
+        .bot-m {
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            transform-origin: top;
+            /* 움직임을 자연스럽게 만들기 위해서는 기준점을 잘 설정해야 한다. */
+
+            animation: bite-down alternate infinite linear 0.2s;
+            /* 애니메이션 작동을 위해 꼭 작성해야하는 태그 */
+
+        }
+
+        /* 애니메이션 제작을 위해서 사용하는 태그로 style밖에 따로 작성한다. */
+        @keyframes bite-up {
+            from {
+                transform: rotate(0deg);
+            }
+            
+            to {
+                transform: rotate(30deg);
+            }
+
+        }
+
+        @keyframes bite-down {
+            from {
+                transform: rotate(0deg);
+            }
+             to {
+                transform: rotate(-30deg);
+             }
+        }
+
+        /* @keyframes 에니매이션이름 {
+                    from {
+                    }
+
+                    to {
+                    }
+                } 이와같은 구조를 사용한다. 외워둘 것*/
+    </style>
+</head>
+<body>
+    <div class="pack">
+        <span class="m top-m"></span>
+        <span class="m bot-m"></span>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
