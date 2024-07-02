@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            position: relative;
+        }
+
+        .animation-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .h-letter {
+            width: 150px;
+            height: 250px;
+            background-color: aliceblue;
+        }
+
+        .stroke {
+            background-color: red;
+            position: absolute;
+        }
+
+        .width1 {
+            width: 50px;
+        }
+
+        .height1 {
+            height: 50px;
+        }
+
+        .height5 {
+            height: 250px;
+        }
+
+        .top {
+            top: 0;
+        }
+
+        .center-v {
+            top: 40%;
+        }
+
+        .bottom {
+            bottom: 0;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .center-h {
+            left: calc(100%/3);
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .stroke1 {
+            animation: stroke 1s infinite alternate;
+            transform-origin: top;
+        }
+
+
+        @keyframes stroke {
+            0% {
+                transform: scaleY(0);
+            }
+
+            100% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation-container h-letter">
+            <div class="stroke stroke1 width1 height5 left top"></div>
+            <div class="stroke stroke2 width1 height1 center-v center-h"></div>
+            <div class="stroke stroke3 width1 height5 right top"></div>
+        </div>
+    </div>
+</body>
+</html>
