@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        #my-section {
+            padding: 0 32px;
+        }
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            
+        }
+        .contents-box {
+            width: 100%;
+            flex-direction: column;
+            
+        }
+
+        figure {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: gray;   
+        }
+
+        .box {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        @media screen and (max-width:767px){
+            #my-section {
+                padding: 0 20px;
+            }
+
+            .box {
+                flex-direction: column;
+                margin-bottom: 108px;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <section id="my-section">
+        <div class="section-container">
+            <div class="box">
+                <figure class="img"></figure>
+                <div class="contents-box">
+                    <h1>제목 영역</h1>
+                    <h3>부제목 영역</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolore magni a dolorem eaque vitae ad dignissimos harum hic ex. Quasi pariatur molestiae optio eum accusamus ea corporis dolorem deleniti.</p>
+                </div>
+            </div>
+            <div class="box">
+                <figure class="img"></figure>
+                <div class="contents-box">
+                    <h1>제목 영역</h1>
+                    <h3>부제목 영역</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolore magni a dolorem eaque vitae ad dignissimos harum hic ex. Quasi pariatur molestiae optio eum accusamus ea corporis dolorem deleniti.</p>
+                </div>
+            </div>
+            <div class="box">
+                <figure class="img"></figure>
+                <div class="contents-box">
+                    <h1>제목 영역</h1>
+                    <h3>부제목 영역</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolore magni a dolorem eaque vitae ad dignissimos harum hic ex. Quasi pariatur molestiae optio eum accusamus ea corporis dolorem deleniti.</p>
+                </div>
+            </div>
+            <div class="box">
+                <figure class="img"></figure>
+                <div class="contents-box">
+                    <h1>제목 영역</h1>
+                    <h3>부제목 영역</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolore magni a dolorem eaque vitae ad dignissimos harum hic ex. Quasi pariatur molestiae optio eum accusamus ea corporis dolorem deleniti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
