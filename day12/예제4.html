@@ -14,67 +14,73 @@
         }
 
         .animation-box {
-            width: 50px;
+            width: 25px;
+            height: 80px;
             aspect-ratio: 1;
             position: absolute;
+            /* border: 1px solid #222; */
             top: 50%;
             left: 50%;
             transform: translate(-50%,100%);
         }
 
         .box {
-            width: 15px;
-            height: 30px;
+            width: 25px;
+            height: 50px;
             border: 2px solid white;
             border-radius: 50px;
             position: absolute;
+            box-sizing: border-box;
             
             animation: off 1.8s infinite;
         }
 
         .button {
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             background-color: white;
             border-radius: 50%;
             position: absolute;
+            left: 50%;
+            top: 15%;
+            transform: translate(-50%,-50%);
 
             animation: off2 1.8s infinite;
         }
 
         @keyframes off {
             from {
-                transform: translate(-50%,100%);
+                top: 0;
                 opacity: 1;
             }
 
             50% {
-                transform: translate(-50%,150%);
+                top: 30px;
                 opacity: 1;
             }
 
             to {
-                transform: translate(-50%,150%);
+                top: 30px;
                 opacity: 0;
             }
         }
 
         @keyframes off2 {
             from {
-                transform: translate(-50%,500%);
+                top: 13px;
                 opacity: 1;
             }
 
             50% {
-                transform: translate(-50%,880%);
+                top: 68px;
                 opacity: 1;
             }
 
             to {
-                transform: translate(-50%,880%);
+                top: 68px;
                 opacity: 0;
             }
-        }
+        } 
 
     </style>
 </head>
