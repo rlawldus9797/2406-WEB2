@@ -5,26 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
-    <style></style>
+    <style>
+        .container {
+            width: 100%;
+        }
+
+        .head {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header {
+            background-color: rgb(246, 248, 250);
+        }
+
+        .logo-spr {
+            display: block;
+            background: url(../band_img/spr_intro.png)no-repeat 0 -98px;
+            width: 78px;
+            height: 29px;
+        }
+
+        .log-box {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        figure > img {
+            width: 600px;
+        }
+
+        .middle_head {
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .log-box  button {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(033, 197, 049);
+            border: 0;
+            color: white;
+        }
+
+        .middle_right_head {
+            width: 800px;
+        }
+
+        .middle_right_head > h1 {
+            font-size: 46px;
+            color: #222;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="head">
-                <img src="" alt="">
-                <form action="">
-                    <select name="언어" id="">
-                        <option value="korean">한국어</option>
-                        <option value="english">English</option>
-                    </select>    
-                </form>
-                <a href="">회원가입</a>
-                <a href="" class="login_box"><button>로그인</button></a>
+                <a href="#" class="logo-spr"></a>
+                <div class="log-box">
+                    <form action="">
+                        <select name="언어" id="">
+                            <option value="korean">한국어</option>
+                            <option value="english">English</option>
+                        </select>    
+                    </form>
+                    <a href="">회원가입</a>
+                    <a href="" class="login_box"><button>로그인</button></a>
+                </div>    
             </div>
             <div class="middle_head">
-                <div class="img">
-                    <img src="" alt="">
-                </div>
+                <figure class="img">
+                    <img src="../band_img/bg_sloganImg.jpg" alt="">
+                </figure>
                 <div class="middle_right_head">
                     <h1>모임이 쉬워진다!<br>우리끼리 밴드</h1>
                     <p>당신의 모임도 BAND로 시작하세요.</p>
@@ -192,20 +249,22 @@
         </section>
         <footer>
             <div class="footer_box">
-                <ul>
-                    <li><a href="">광고</a></li>
-                    <li><a href="">이용약관</a></li>
-                    <li><a href="">개인정보처리방침</a></li>
-                    <li><a href="">쿠키 설정</a></li>
-                    <li><a href="">스티커제안</a></li>
-                    <li><a href="">블로그</a></li>
-                    <li><a href="">CCPA 개인 정보 관리</a></li>
-                    <li><a href="">청소년 보호를 위한 노력</a></li>
-                    <li><a href="">활동정책</a></li>
-                    <li><a href="">권리침해 신고안내</a></li>
-                    <li><a href="">개발자</a></li>
-                    <li><a href="">도움말</a></li>
-                </ul>
+                <nav class="footer_row_box">
+                    <ul>
+                        <li><a href="">광고</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">쿠키 설정</a></li>
+                        <li><a href="">스티커제안</a></li>
+                        <li><a href="">블로그</a></li>
+                        <li><a href="">CCPA 개인 정보 관리</a></li>
+                        <li><a href="">청소년 보호를 위한 노력</a></li>
+                        <li><a href="">활동정책</a></li>
+                        <li><a href="">권리침해 신고안내</a></li>
+                        <li><a href="">개발자</a></li>
+                        <li><a href="">도움말</a></li>
+                    </ul>
+                </nav>    
                 <p>BAND&#169;2024</p>
             </div>
         </footer>
