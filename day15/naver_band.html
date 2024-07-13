@@ -12,9 +12,10 @@
         }
 
         .head {
-            height: 100px;
+            height: 50px;
             display: flex;
             justify-content: space-between;
+            padding: 1%;
         }
 
         header {
@@ -43,23 +44,125 @@
             display: flex;
             width: 1000px;
             margin: 0 auto;
+            gap: 5%;
         }
 
         .log-box  button {
-            width: 100px;
-            height: 40px;
+            width: 90px;
+            height: 35px;
             background-color: rgb(033, 197, 049);
             border: 0;
+            border-radius: 2px;
             color: white;
+            font-weight: bold;
+        }
+
+        .log-box button:hover {
+            cursor: pointer;
+        }
+
+        .make_box {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+
+        #lang {
+            border: 0;
+            background-color: rgb(246, 248, 250);
+        }
+
+        .middle_top_head {
+            width: 500px;
         }
 
         .middle_right_head {
-            width: 800px;
+            width: 100%;
         }
 
         .middle_right_head > h1 {
-            font-size: 46px;
+            font-size: 48px;
             color: #222;
+            line-height: 120%;
+            margin-bottom: 5%;
+        }
+
+        .middle_right_head > p {
+            color: #444;
+            margin-bottom: 5%;
+        }
+
+        .lonin_box2 button{
+            width: 360px;
+            height: 55px;
+            background-color: rgb(033, 197, 049);
+            border-radius: 2px;
+            color: white;
+            border: 0;
+            font-size: 15px;
+        }
+
+        .make_box2 button {
+            width: 360px;
+            height: 55px;
+            background-color: white;
+            border: 0.5px solid #999999;
+            border-radius: 2px;
+            color: #222;
+            font-size: 15px;
+        }
+
+        .log_box {
+            height: 120px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 8%;
+        }
+
+
+        .etc1 {
+            gap: 3%;
+            display: flex;
+            font-size: 13px;
+            margin-bottom: 3%;
+        }
+
+        .etc1 p {
+            color: #444;
+            
+        }
+
+        .etc1 a {
+            color: rgb(033, 197, 049);
+            font-weight: bold;
+        }
+
+        .shit {
+            margin-top: 30%;
+        }
+
+        .center_text_box {
+            width: 100%;
+            height: 514px;
+            background-image: url(../band_img/bg_intro.jpg);
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center_text_box>h2{
+            font-size: 45px;
+            margin-bottom: 3%;
+        }
+
+        .center_text_box>p {
+            font-size: 16px;
+            margin-bottom: 1%;
         }
     </style>
 </head>
@@ -70,12 +173,12 @@
                 <a href="#" class="logo-spr"></a>
                 <div class="log-box">
                     <form action="">
-                        <select name="언어" id="">
+                        <select name="언어" id="lang">
                             <option value="korean">한국어</option>
                             <option value="english">English</option>
                         </select>    
                     </form>
-                    <a href="">회원가입</a>
+                    <a href="" class="make_box">회원가입</a>
                     <a href="" class="login_box"><button>로그인</button></a>
                 </div>    
             </div>
@@ -83,28 +186,32 @@
                 <figure class="img">
                     <img src="../band_img/bg_sloganImg.jpg" alt="">
                 </figure>
-                <div class="middle_right_head">
-                    <h1>모임이 쉬워진다!<br>우리끼리 밴드</h1>
-                    <p>당신의 모임도 BAND로 시작하세요.</p>
-                    <div class="log_box">
-                        <a href="" class="lonin_box2"><button>로그인</button></a>
-                        <a href="" class="make_box"><button>회원가입</button></a>
-                    </div>
-                </div>
-                <div class="etc">
-                    <div class="etc1">
-                        <p>내게 맞는 밴드를 만나려면</p>
-                        <a href="">밴드 찾기</a>    
-                    </div>
-                    <div class="etc2">
-                        <p>모임별 밴드 활용법</p>
-                        <a href="">밴드 가이드 보기</a>    
-                    </div>
-                    <div class="etc3">
-                        <p>만 13세 미만이라면?</p>
-                        <a href="">'밴드 키즈'알아보기</a>    
-                    </div>
-                </div>
+                <div class="middle_top_head">
+                    <div class="shit">
+                        <div class="middle_right_head">
+                            <h1>모임이 쉬워진다!<br>우리끼리 밴드</h1>
+                            <p>당신의 모임도 BAND로 시작하세요.</p>
+                            <div class="log_box">
+                                <a href="" class="lonin_box2"><button>로그인</button></a>
+                                <a href="" class="make_box2"><button>회원가입</button></a>
+                            </div>
+                        </div>
+                        <div class="etc">
+                            <div class="etc1">
+                                <p>내게 맞는 밴드를 만나려면</p>
+                                <a href="">밴드 찾기</a>    
+                            </div>
+                            <div class="etc1">
+                                <p>모임별 밴드 활용법</p>
+                                <a href="">밴드 가이드 보기</a>    
+                            </div>
+                            <div class="etc1">
+                                <p>만 13세 미만이라면?</p>
+                                <a href="">'밴드 키즈'알아보기</a>    
+                            </div>
+                        </div>
+                    </div>    
+                </div>    
             </div>
         </header>
         <section>
@@ -114,21 +221,23 @@
                     <p>밴드는 그룹 멤버와 함께 하는 공간입니다.</p>
                     <p>동호회, 스터디, 주제별 모임을 밴드로 시작하세요.</p>
                 </div>
-                <div class="center_box1">
-                    <img src="" alt="">
-                    <h3>어떤 모임이라도!</h3>
-                    <p>친구, 가족, 동료 등 함께 하고싶은 사람과 우리만의 공간을 만들어보세요.</p>
-                </div>
-                <div class="center_box1">
-                    <img src="" alt="">
-                    <h3>모임에 딱 맞는 기능들</h3>
-                    <p>투표로 의견을 모으고, 함께 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
-                </div>
-                <div class="center_box1">
-                    <img src="" alt="">
-                    <h3>내가 원하는 모임 찾기</h3>
-                    <p>취미, 스포츠, 또래 모임 등 나와 같은 관심사 밴드를 찾을 수 있어요.</p>
-                </div>
+                <div class="shit_box">
+                    <div class="center_box1">
+                        <img src="" alt="">
+                        <h3>어떤 모임이라도!</h3>
+                        <p>친구, 가족, 동료 등 함께 하고싶은 사람과 우리만의 공간을 만들어보세요.</p>
+                    </div>
+                    <div class="center_box1">
+                        <img src="" alt="">
+                        <h3>모임에 딱 맞는 기능들</h3>
+                        <p>투표로 의견을 모으고, 함께 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
+                    </div>
+                    <div class="center_box1">
+                        <img src="" alt="">
+                        <h3>내가 원하는 모임 찾기</h3>
+                        <p>취미, 스포츠, 또래 모임 등 나와 같은 관심사 밴드를 찾을 수 있어요.</p>
+                    </div>
+                </div>    
             </div>
             <article>
                 <div class="high_box">
